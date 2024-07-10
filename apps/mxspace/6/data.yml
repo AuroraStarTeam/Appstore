@@ -35,7 +35,7 @@ formFields:
   - default: "false"
     edit: true
     envKey: ENCRYPT_ENABLE
-    labelEn: Whether to enable encryption (true or false, if you want to enable it, you need to enter the encryption key)
+    labelEn: Whether to enable encryption
     labelZh: 是否开启加密
     required: true
     type: text
