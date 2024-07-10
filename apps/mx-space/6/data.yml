@@ -11,16 +11,16 @@ formFields:
   - default: example.com
     edit: true
     envKey: ALLOWED_ORIGINS
-    labelEn: Allowed domain (multiple delimited with ",")
-    labelZh: 被允许的域名 (多个使用英文逗号分割)
+    labelEn: Allowed domain
+    labelZh: 被允许的域名
     required: true
     type: text
   - default: Np2qgqtiUayA85
     edit: true
     random: true
     envKey: JWT_SECRET
-    labelEn: JWT key (16 to 32 characters)
-    labelZh: JWT 密钥 (16 到 32 位字符，请记得保存它到安全的地方)
+    labelEn: JWT key
+    labelZh: JWT 密钥
     random: true
     required: true
     rule: paramComplexity
@@ -28,15 +28,15 @@ formFields:
   - default: ''
     edit: true
     envKey: ENCRYPT_KEY
-    labelEn: Encryption key (not recommended for non-special needs, run "openssl rand -hex 32" on the terminal to obtain it)
-    labelZh: 加密密钥 (非特殊需求不建议填写,终端执行 "openssl rand -hex 32" 获取)
+    labelEn: Encryption key
+    labelZh: 加密密钥
     required: false
     type: text
   - default: "false"
     edit: true
     envKey: ENCRYPT_ENABLE
     labelEn: Whether to enable encryption (true or false, if you want to enable it, you need to enter the encryption key)
-    labelZh: 是否开启加密 (true或false,开启则需要填写加密密钥)
+    labelZh: 是否开启加密
     required: true
     type: text
   - default: Asia/Shanghai

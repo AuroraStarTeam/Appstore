@@ -6,8 +6,8 @@ services:
     environment:
       - TZ=${TIME_ZONE}
       - NODE_ENV=production
-      - DB_HOST=mongo
-      - REDIS_HOST=redis
+      - DB_HOST=${CONTAINER_NAME}-mongo
+      - REDIS_HOST=${CONTAINER_NAME}-redis
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
       - JWT_SECRET=${JWT_SECRET}
       - ENCRYPT_KEY=${ENCRYPT_KEY}
